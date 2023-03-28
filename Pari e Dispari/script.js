@@ -2,9 +2,12 @@
 const button = document.getElementById('button-vai')
 const pariEDispari = document.getElementById('pari-dispari')
 const number = document.getElementById('one-to-five')
+const section = document.querySelector('section')
+const h1 = document.createElement('h1')
 let valoreNum; 
 let pariDispari;
 
+section.append(h1)
 
 button.addEventListener('click', function(){
   valoreNum = parseInt(number.value);
@@ -15,10 +18,12 @@ button.addEventListener('click', function(){
 console.log(arrayResult + "-------" + pariDispari);
 
   if (arrayResult[0] === pariDispari) {
-    console.log(`Complimenti user il tuo numero ${arrayResult[1]} é ${arrayResult[0]} quindi hai vinto`);
+    h1.append(` 
+    Complimenti user il tuo numero ${arrayResult[1]} é ${arrayResult[0]} quindi hai vinto ` );
+
   }
   else{
-    console.log(`Mi spiace ma il PC ha avuto la meglio, il numero ${arrayResult[1]} é ${arrayResult[0]} quindi hai perso`);
+    h1.append(`Mi spiace ma il PC ha avuto la meglio, ${arrayResult[1]} é ${arrayResult[0]}`);
   }
   
 })
