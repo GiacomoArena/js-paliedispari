@@ -1,28 +1,31 @@
-/*
-**Palidroma**
-Chiedere all’utente di inserire una parola
-Creare una funzione per capire se la parola inserita è palindroma
 
-*/
+const button = document.getElementById('button-vai')
+const pariDispari = document.getElementById('pari-dispari')
+const number = document.getElementById('one-to-five')
+const valoreNum = parseInt(number.value);
 
-const parolaUtente = prompt("Scrivi una parola e ti diró se si tratta di una parola palindroma o no");
-const parolaMin = parolaUtente.toLowerCase();
 
-const verificaPalindromo = palindroma(parolaMin);
-
+button.addEventListener('click', function(){
+  let funzioneSomma = somma(valoreNum, randomNumPc(1, 5))
+})
 
 
 
 
+function randomNumPc (min, max){
+  const randomNum = Math.floor(Math.random()*(max - min +1)+min);
 
+return randomNum;
+}
 
-function palindroma(parolaUtente) {
-  let parolaInversa = parolaUtente.split("").reverse().join("");
-  if (parolaUtente === parolaInversa) {
-    console.log(parolaInversa + " é una parola palindroma");
+function somma(num, random){
+  const operazione = valoreNum + randomNumPc(1, 5);
+  if(operazione % 2 === 0){
+    console.log("questo numero é pari " + operazione);
   }
-  else{
-    console.log(parolaInversa + " non é una parola palindroma");
+  else {
+    console.log("questo numero é dispari " + operazione);
   }
-  
+
+  return operazione;
 }
