@@ -17,3 +17,11 @@ Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzion
 Sommiamo i due numeri
 Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 Dichiariamo chi ha vinto.
+
+  - creo sull'html i vari button e i select con la quale l'utente puó scegliere se pari o dispari e il numero.
+
+  - richiamo e salvo in una variabile button, number, pari-dispari
+
+  - creo la funzione randomica per un val min e max (che poi sará da 1 a 5)
+
+  - creo la funzione di somma del numero utente e il numero casuale generando una risposta differente se il risultato é pari o dispari
