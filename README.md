@@ -6,7 +6,8 @@ Risolvi attraverso delle funzioni i seguenti esercizi:
 Chiedere all’utente di inserire una parola
 Creare una funzione per capire se la parola inserita è palindroma
   - attraverso un prompt chiediamo all'utente di inserire una parola 
-  - creamo una funzione che mi dia l'inverso di quella parola attraverso lo split:(che mi dividerá la parola singolarmente) .reverse:(che invertirá le lettere) ed infine .join (per riunire il tutto di nuovo in una singola stringa)
+  - creamo una funzione che mi dia l'inverso di quella parola attraverso lo split:(che mi dividerá la parola singolarmente) .reverse:(che invertirá l'ordine delle lettere) ed infine .join (per riunire il tutto di nuovo in una singola stringa)
+  - dentro la funzione ci sará anche una condizione che se la parola inserita sará uguale a quella invertita ci dará come risulatto"questa é una parola palindroma" altrimenti "questa non é una parola palindroma"
 
 
 
