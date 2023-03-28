@@ -4,6 +4,8 @@ const pariEDispari = document.getElementById('pari-dispari')
 const number = document.getElementById('one-to-five')
 let valoreNum; 
 let pariDispari;
+
+
 button.addEventListener('click', function(){
   valoreNum = parseInt(number.value);
   pariDispari= pariEDispari.value
@@ -47,4 +49,9 @@ function somma(num, random){
   array[1] = operazione;
 
   return array;
+}
+
+
+function enableBtn(){
+  button.removeAttribute("disabled");
 }

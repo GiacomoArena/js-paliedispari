@@ -8,8 +8,8 @@
 </head>
 <body>
 <div class="container">
-  <select id="pari-dispari">
-    <option disabled selected>Scegli</option>
+  <select id="pari-dispari" onchange="enableBtn()">
+    <option disabled selected value ="default">Scegli</option>
     <option value="pari">Pari</option>
     <option value="dispari">Dispari</option>
   </select>
@@ -23,7 +23,7 @@
     <option value="5">5</option>
   </select>
 
-  <button id="button-vai">Vai</button>
+  <button id="button-vai" disabled>Vai</button>
 </div>
   
   
